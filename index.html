@@ -10,20 +10,25 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- css bootstrap file linking -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- font 700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
     <section class="Navbar">
         <nav>
-            <div class="container p-0" id="nav">
-                <nav class="navbar navbar-expand-lg navbar-fixed-top px-lg-0" id="nav-cont">
+            <div class="container p-0 " id="nav">
+                <nav class="navbar navbar-expand-lg px-lg-0" id="nav-cont">
                     <a class="navbar-brand" href="#"><img src="./assets/images/Logo.png" class="img-fluid" id="logo"
                             alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                        <i class="fa-solid fa-bars p-1"></i>
                     </button>
                     <div class="collapse navbar-collapse align-items-end d-lg-flex flex-lg-column"
                         id="navbarTogglerDemo02">
@@ -52,7 +57,7 @@
                                         <a class="nav-link" href="#">OUR WORK</a>
                                     </li>
                                     <li class="nav-item text-center">
-                                        <a class="nav-link text-white m-0 px-lg-3" href="#">REQUEST A QUOTE</a>
+                                        <a class="nav-link text-white m-0 px-lg-2" href="#">REQUEST A QUOTE</a>
                                     </li>
                                 </ul>
                             </div>
@@ -65,7 +70,7 @@
         <section class="hero-content">
             <div class="container p-0">
                 <div class="row pl-3 pl-lg-0">
-                    <div class="col-lg-8">
+                    <div class="col-md-12">
                         <p>
                             Screeding Experts For Every <br>
                             Application, Small And Large <br>
@@ -78,17 +83,66 @@
         </section>
     </section>
 
+    <section class="Our_Divisions">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>WHAT WE OFFER<br><span>Our Divisions</span></p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3" id="D-blue">
+                    <img src="./assets/images/Icon-1.svg" alt="Icon-1">
+                    <p>ContractScreed<sup>&#174;</sup></p>
+                    <p>We engage in large scale contracts and are capable of handling high volume, commercial screeding
+                        contracts.</p>
+                    <a class="text-white" href="#">FIND OUT MORE</a>
+                    <p id="line"></p>
+                </div>
+                <div class="col-md-6 col-lg-3" id="L-blue">
+                    <img src="./assets/images/Icon-2.svg" alt="Icon-2">
+                    <p>BuilderScreed<sup>&#174;</sup></p>
+                    <p>Whether it’s a small extension, a residential property or small commercial unit, then our
+                        BuilderScreed division is for you.
+                    </p>
+                    <a class="text-white" href="#">FIND OUT MORE</a>
+                </div>
+                <div class="col-md-6 col-lg-3" id="violet">
+                    <img src="./assets/images/Icon-3.svg" alt="Icon-3">
+                    <p>ScreedTest<sup>&#174;</sup></p>
+                    <p>We now extend our expertise to all screeders, contractors and builders, and offers a range of
+                        screed testing services.</p>
+                    <a class="text-white" href="#">FIND OUT MORE</a>
+                </div>
+                <div class="col-md-6 col-lg-3" id="red">
+                    <img src="./assets/images/Icon-4.svg" alt="Icon-4">
+                    <p>HomeScreed<sup>&#174;</sup></p>
+                    <p>We are the only screeding company that has a specialist division just for the domestic market.
+                    </p>
+                    <a class="text-white" href="#">FIND OUT MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
 
-        //Navbar Scrolldown BG-color Changes
-        $(function () {
-            $(document).scroll(function () {
-                var $nav = $(".navbar-fixed-top");
-                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
-            });
-        });
-    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <!-- jquery cdns -->

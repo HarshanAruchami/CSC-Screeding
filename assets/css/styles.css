@@ -1,16 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
 .Navbar {
     background-image: url(../images/Banner.png);
     position: relative;
     background-size: cover;
     background-position: center;
-    padding: 200px 0 450px;
+    padding: 50px 0 188px;
+
 }
 
 nav {
     position: absolute;
     width: 100%;
-    margin-top: -6em;
-    background-color: white;
+    margin-top: -1.7em;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 #logo {
@@ -20,6 +25,7 @@ nav {
 nav a {
     font-weight: 700 !important;
     font-size: 14px !important;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -39,7 +45,7 @@ nav a {
 }
 
 #nav-btn a {
-    margin-right: 2em;
+    margin-right: 2.2em;
 }
 
 #nav-cont {
@@ -47,12 +53,12 @@ nav a {
 }
 
 nav button {
-    background-color: rgba(0, 0, 0, 0.253)!important;
-    color: aliceblue!important;
+    background-color: rgba(0, 0, 0, 0.253) !important;
+    color: aliceblue !important;
 }
 
 .navbar-toggler-icon {
-    color: rgb(255, 255, 255)!important;
+    color: rgb(255, 255, 255) !important;
 }
 
 /* Media for nav-items */
@@ -67,6 +73,8 @@ nav button {
     }
 }
 
+
+
 /* media for logo */
 @media only screen and (max-width:380px) {
     .navbar-brand {
@@ -74,24 +82,155 @@ nav button {
     }
 }
 
+
+
 /* ============
    Hero-Content
    ============*/
 .hero-content {
     margin: 6em 0 0 0;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
+
 }
-
-
 
 .hero-content a {
     background-color: #f7461d;
     padding: .6em;
     border-radius: 20px;
     text-decoration: none !important;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.hero-content span {
+    font-weight: 200;
+    font-size: 38px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero-content p {
     color: white;
-    margin-bottom: 2em;
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: .7em;
+}
+
+@media only screen and (max-width:991px) {
+    .hero-content a {
+        font-size: 18px;
+    }
+
+    .hero-content span {
+        font-weight: 200;
+        font-size: 29px;
+    }
+
+    .hero-content p {
+        font-size: 38px;
+    }
+
+    nav {
+        background-color: white;
+    }
+
+    .navbar-nav li:last-child {
+        margin-top: .6em;
+        margin-bottom: 1em;
+    }
+}
+
+/* ============
+   Our Divisions
+   ============*/
+
+.Our_Divisions p {
+    font-weight: 900;
+    font-size: 16px;
+    color: #1c3e9469;
+}
+
+.Our_Divisions span {
+    font-weight: 900;
+    font-size: 55px;
+    color: #1c3f94 !important;
+}
+
+#D-blue p {
+    color: #1c3f94 !important;
+}
+
+#L-blue p {
+    color: #34a7df;
+}
+
+#violet p {
+    color: #8f64cb;
+}
+
+#red p {
+    color: #ed3829;
+}
+
+#D-blue p:nth-last-child(3),
+#L-blue p:nth-last-child(2),
+#violet p:nth-last-child(2),
+#red p:nth-last-child(2) {
+    color: black !important;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#D-blue a {
+    border-radius: 20px;
+    background-color: #1c3f94;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 0em;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: .8em 2.5em;
+}
+
+#L-blue a {
+    border-radius: 20px;
+    background-color: #34a7df;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 0em;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: .8em 2.5em;
+}
+
+#violet a {
+    border-radius: 20px;
+    background-color: #8f64cb;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 0em;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: .8em 2.5em;
+}
+
+#red a {
+    border-radius: 20px;
+    background-color: #ed3829;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 0em;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: .8em 2.5em;
+}
+
+#line {
+    margin: 3em 0 3em 0;
+    padding: 40px 70px 200px 1px;
+    background-color: #1c3f94;
+    clip-path: polygon(100% 0, 0 0, 100% 5%);
+
+
+
 }
