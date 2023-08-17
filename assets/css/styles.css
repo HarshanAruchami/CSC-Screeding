@@ -1,4 +1,4 @@
-.Navbar{
+.Navbar {
     background-image: url(../images/Banner.png);
     position: relative;
     background-size: cover;
@@ -6,12 +6,92 @@
     padding: 200px 0 450px;
 }
 
-nav{
+nav {
     position: absolute;
     width: 100%;
     margin-top: -6em;
+    background-color: white;
 }
 
-#logo{
-    width: 60%;
+#logo {
+    width: 80%;
+}
+
+nav a {
+    font-weight: 700 !important;
+    font-size: 14px !important;
+
+}
+
+.nav-link {
+    color: #1c3f94 !important;
+}
+
+.navbar-nav li:last-child {
+    border-radius: 20px;
+    background-color: #1c3f94;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 10em;
+}
+
+.grey-clr {
+    color: #95979a !important;
+}
+
+#nav-btn a {
+    margin-right: 2em;
+}
+
+#nav-cont {
+    z-index: 1;
+}
+
+nav button {
+    background-color: black!important;
+    color: aliceblue!important;
+}
+
+.navbar-toggler-icon {
+    color: rgb(255, 255, 255)!important;
+}
+
+/* Media for nav-items */
+@media only screen and (min-width:992px) and (max-width:1200px) {
+    nav a {
+        font-size: 12px !important;
+
+    }
+
+    #nav-btn a {
+        margin-right: 0.6em;
+    }
+}
+
+/* media for logo */
+@media only screen and (max-width:380px) {
+    .navbar-brand {
+        width: 70%;
+    }
+}
+
+/* ============
+   Hero-Content
+   ============*/
+.hero-content {
+    margin: 6em 0 0 0;
+    position: relative;
+}
+
+
+
+.hero-content a {
+    background-color: #f7461d;
+    padding: .6em;
+    border-radius: 20px;
+    text-decoration: none !important;
+}
+
+.hero-content p {
+    color: white;
+    margin-bottom: 2em;
 }

@@ -5,56 +5,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSC-SCREEDING</title>
+
     <!-- css file linking -->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <!-- css bootstrap file linking -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+
 </head>
 
 <body>
     <section class="Navbar">
         <nav>
-            <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <div class="container p-0" id="nav">
+                <nav class="navbar navbar-expand-lg navbar-fixed-top px-lg-0" id="nav-cont">
                     <a class="navbar-brand" href="#"><img src="./assets/images/Logo.png" class="img-fluid" id="logo"
                             alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
                     </button>
-
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-                        <ul class="navbar-nav mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">WHAT WE DO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SCREED SYSTEMS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT CSC</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">OUR WORK</a>
-                            </li>
-                            <li class="nav-item ">
-                                <a class="nav-link btn-info" href="#">REQUEST A QUOTE</a>
-                            </li>
-                        </ul>
+                    <div class="collapse navbar-collapse align-items-end d-lg-flex flex-lg-column"
+                        id="navbarTogglerDemo02">
+                        <div class="row justify-content-end">
+                            <div class="col-12 d-flex flex-column flex-lg-row">
+                                <a class="nav-link grey-clr pl-0" href="#">Call: 0330 223 2364</a>
+                                <a class="nav-link grey-clr px-0" href="#">Email: estimating@cscscreeding.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="row" id="nav-btn">
+                            <div class="col-12 col-lg-12">
+                                <ul class="navbar-nav mt-2 mt-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">WHAT WE DO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">SCREED SYSTEMS</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">ABOUT CSC</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">OUR WORK</a>
+                                    </li>
+                                    <li class="nav-item text-center">
+                                        <a class="nav-link text-white m-0 px-lg-3" href="#">REQUEST A QUOTE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </nav>
             </div>
         </nav>
+
+        <section class="hero-content">
+            <div class="container p-0">
+                <div class="row pl-3 pl-lg-0">
+                    <div class="col-lg-8">
+                        <p>
+                            Screeding Experts For Every <br>
+                            Application, Small And Large <br>
+                            <span>The Perfect Start, To A Perfect Finish</span>
+                        </p>
+                        <a class="text-white px-lg-3" href="#">REQUEST A QUOTE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </section>
 
 
 
 
 
+    <!-- jquery cdns -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- Toggle dropdown bootstrap cdn -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
