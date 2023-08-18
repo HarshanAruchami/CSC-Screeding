@@ -54,6 +54,10 @@ nav a {
     margin-right: 2.2em;
 }
 
+#nav-btn {
+    width: 106.2%;
+}
+
 #nav-cont {
     z-index: 1;
 }
@@ -106,7 +110,7 @@ nav button {
    Our Divisions
    ============*/
 .Our_Divisions {
-    margin: 5em 0;
+    margin-top: 5em;
 }
 
 #heading-1 {
@@ -243,6 +247,111 @@ nav button {
     height: 310px;
 }
 
+/* ============
+   Our Work
+   ============*/
+
+.Our_work {
+    background-image: url(../images/layout-3-bg-img.svg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 500px 0 720px;
+}
+
+#heading-2 p {
+    font-weight: 900;
+    font-size: 16px;
+    color: #1c3e9469;
+    margin-bottom: 0%;
+}
+
+#heading-2 span {
+    font-weight: 900;
+    font-size: 55px;
+    color: #1c3f94 !important;
+}
+
+#heading-2 {
+    margin-top: -21em;
+    margin-bottom: 5em;
+}
+
+#heading-2 a {
+    text-decoration: none !important;
+    color: #f7461d !important;
+    background-color: transparent;
+    box-shadow: 5px 5px #1c3e9431;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: .8em 2.5em;
+}
+
+#wht-container {
+    background-color: white;
+    padding: 2em 1em 2em 2em;
+    height: 75%;
+    z-index: 0;
+    margin-top: -2em;
+
+}
+
+#sm-img img {
+    margin-right: 1.5em;
+    margin-top: 2em;
+}
+
+#sm-img img:last-child {
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+#image-1 {
+    z-index: 1;
+}
+
+#image-1 img {
+    width: 110%;
+}
+
+#wht-container #content {
+    padding: 0 2.5em;
+}
+
+#wht-container #content p {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#wht-container #content a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #f7461d;
+    padding: .6em 1.5em;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#wht-container p {
+    font-size: 12px;
+    font-weight: 900;
+    color: #1c3e9469;
+
+
+}
+
+#wht-container span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1c3f94;
+}
+
+
+
+
 
 
 
@@ -257,7 +366,7 @@ nav button {
     }
 
     #nav-btn a {
-        margin-right: 0.6em;
+        margin-right: .40em;
     }
 
     /* Cards Button */
@@ -289,6 +398,34 @@ nav button {
     #line-red {
         margin-top: 2.7em;
     }
+
+
+    /* layout-3 */
+
+
+    #wht-container #content {
+        padding: 0 1.8em;
+    }
+
+    #icon-sm {
+        width: 80%;
+    }
+
+    #wht-container {
+        height: 80%;
+    }
+
+    #sm-img img {
+        margin-right: 2.2em;
+        margin-top: .9em;
+        width: 20%;
+    }
+
+    #sm-img img:last-child {
+        margin-top: .9em;
+
+    }
+
 }
 
 /* Media for screen 0-max-992px*/
@@ -325,6 +462,32 @@ nav button {
     #violet,
     #red {
         margin-top: 8em;
+    }
+
+    /* layout -3 */
+    #image-1 img {
+        width: 100%;
+    }
+
+    #wht-container {
+        margin-top: .1em;
+        height: 66%;
+    }
+
+    #sm-img img {
+        margin-left: 1em;
+        margin-right: 2em;
+        margin-top: .9em;
+        width: 20%;
+    }
+
+    #sm-img img:last-child {
+        margin-top: .9em;
+
+    }
+
+    #wht-container #content {
+        padding: 0 3.5em;
     }
 
 }
