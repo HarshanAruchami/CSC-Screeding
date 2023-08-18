@@ -1,4 +1,10 @@
+html,
 body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif !important;
 }
 
@@ -7,7 +13,7 @@ body {
     position: relative;
     background-size: cover;
     background-position: center;
-    padding: 50px 0 188px;
+    padding: 50px 0 220px;
 
 }
 
@@ -61,28 +67,6 @@ nav button {
     color: rgb(255, 255, 255) !important;
 }
 
-/* Media for nav-items */
-@media only screen and (min-width:992px) and (max-width:1200px) {
-    nav a {
-        font-size: 12px !important;
-
-    }
-
-    #nav-btn a {
-        margin-right: 0.6em;
-    }
-}
-
-
-
-/* media for logo */
-@media only screen and (max-width:380px) {
-    .navbar-brand {
-        width: 70%;
-    }
-}
-
-
 
 /* ============
    Hero-Content
@@ -116,6 +100,198 @@ nav button {
     margin-bottom: .7em;
 }
 
+
+
+/* ============
+   Our Divisions
+   ============*/
+.Our_Divisions {
+    margin: 5em 0;
+}
+
+#heading-1 {
+    margin-bottom: 4em;
+}
+
+.Our_Divisions p {
+    font-weight: 900;
+    font-size: 16px;
+    color: #1c3e9469;
+}
+
+.Our_Divisions span {
+    font-weight: 900;
+    font-size: 55px;
+    color: #1c3f94 !important;
+}
+
+#D-blue p {
+    color: #1c3f94 !important;
+    margin-bottom: 1.8em;
+}
+
+#L-blue p {
+    color: #34a7df;
+    margin-bottom: 1.8em;
+}
+
+#violet p {
+    color: #8f64cb;
+    margin-bottom: 1.8em;
+}
+
+#red p {
+    color: #ed3829;
+    margin-bottom: 1.8em;
+}
+
+#D-blue p:nth-last-child(3),
+#L-blue p:nth-last-child(3),
+#violet p:nth-last-child(3),
+#red p:nth-last-child(3) {
+    color: black !important;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#D-blue a {
+    border-radius: 20px;
+    background-color: #1c3f94;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 0em;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: .8em 2.5em;
+    line-height: 6em;
+}
+
+#L-blue a {
+    border-radius: 20px;
+    background-color: #34a7df;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 0em;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: .8em 2.5em;
+    line-height: 6em;
+}
+
+#violet a {
+    border-radius: 20px;
+    background-color: #8f64cb;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 0em;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: .8em 2.5em;
+    line-height: 6em;
+}
+
+#red a {
+    border-radius: 20px;
+    background-color: #ed3829;
+    box-shadow: 5px 5px #1c3e9431;
+    width: 0em;
+    text-decoration: none !important;
+    font-weight: 700;
+    font-size: 12px;
+    padding: .8em 2.5em;
+    line-height: 6em;
+}
+
+/* Cards Bottom Line */
+#line-blue {
+    margin-top: 4em;
+    margin-bottom: 0% !important;
+    padding: 40px 70px 0px 1px;
+    background-color: #1c3f94;
+    clip-path: polygon(100% 0, 0 0, 100% 26%);
+}
+
+#line-skyblue {
+    margin-top: 4em;
+    margin-bottom: 0% !important;
+    padding: 40px 70px 0px 1px;
+    background-color: #34a7df;
+    clip-path: polygon(61% 33%, 100% 38%, 100% 0, 0 0, 0 27%);
+}
+
+#line-violet {
+    margin-top: 4em;
+    margin-bottom: 0% !important;
+    padding: 40px 70px 0px 1px;
+    background-color: #8f64cb;
+    clip-path: polygon(61% 30%, 100% 27%, 100% 0, 0 0, 0 38%);
+}
+
+#line-red {
+    margin-top: 4em;
+    margin-bottom: 0% !important;
+    padding: 40px 70px 0px 1px;
+    background-color: #ed3829;
+    clip-path: polygon(0 26%, 0 0, 100% 0);
+}
+
+/* column border right lines */
+#D-blue,
+#L-blue,
+#violet {
+    border-right: #95979a48 solid .1em;
+    height: 310px;
+}
+
+
+
+
+
+/* Media for screen b/w 992px and 1199*/
+@media only screen and (min-width:992px) and (max-width:1199px) {
+
+    /* navbar */
+    nav a {
+        font-size: 12px !important;
+
+    }
+
+    #nav-btn a {
+        margin-right: 0.6em;
+    }
+
+    /* Cards Button */
+    #D-blue a {
+        line-height: 7.4em;
+    }
+
+    #L-blue a {
+        line-height: 3.5em;
+    }
+
+    #violet a {
+        line-height: 7.3em;
+    }
+
+    #red a {
+        line-height: 11em;
+    }
+
+    /* Cards Bottom line */
+    #line-skyblue {
+        margin-top: 5.6em;
+    }
+
+    #line-violet {
+        margin-top: 4.1em;
+    }
+
+    #line-red {
+        margin-top: 2.7em;
+    }
+}
+
+/* Media for screen 0-max-992px*/
 @media only screen and (max-width:991px) {
     .hero-content a {
         font-size: 18px;
@@ -138,99 +314,38 @@ nav button {
         margin-top: .6em;
         margin-bottom: 1em;
     }
+
+    /* column border right lines */
+
+    #L-blue {
+        border-right: #95979a48 solid 0em;
+    }
+
+    /* cards */
+    #violet,
+    #red {
+        margin-top: 8em;
+    }
+
 }
 
-/* ============
-   Our Divisions
-   ============*/
+/* media for screen 0-max-380 */
+@media only screen and (max-width:767px) {
 
-.Our_Divisions p {
-    font-weight: 900;
-    font-size: 16px;
-    color: #1c3e9469;
-}
+    /* navbar */
+    .navbar-brand {
+        width: 70%;
+    }
 
-.Our_Divisions span {
-    font-weight: 900;
-    font-size: 55px;
-    color: #1c3f94 !important;
-}
+    #D-blue,
+    #violet {
+        border-right: #95979a48 solid 0em;
 
-#D-blue p {
-    color: #1c3f94 !important;
-}
+    }
 
-#L-blue p {
-    color: #34a7df;
-}
+    /* cards */
 
-#violet p {
-    color: #8f64cb;
-}
-
-#red p {
-    color: #ed3829;
-}
-
-#D-blue p:nth-last-child(3),
-#L-blue p:nth-last-child(2),
-#violet p:nth-last-child(2),
-#red p:nth-last-child(2) {
-    color: black !important;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-#D-blue a {
-    border-radius: 20px;
-    background-color: #1c3f94;
-    box-shadow: 5px 5px #1c3e9431;
-    width: 0em;
-    text-decoration: none !important;
-    font-weight: 700;
-    font-size: 12px;
-    padding: .8em 2.5em;
-}
-
-#L-blue a {
-    border-radius: 20px;
-    background-color: #34a7df;
-    box-shadow: 5px 5px #1c3e9431;
-    width: 0em;
-    text-decoration: none !important;
-    font-weight: 700;
-    font-size: 12px;
-    padding: .8em 2.5em;
-}
-
-#violet a {
-    border-radius: 20px;
-    background-color: #8f64cb;
-    box-shadow: 5px 5px #1c3e9431;
-    width: 0em;
-    text-decoration: none !important;
-    font-weight: 700;
-    font-size: 12px;
-    padding: .8em 2.5em;
-}
-
-#red a {
-    border-radius: 20px;
-    background-color: #ed3829;
-    box-shadow: 5px 5px #1c3e9431;
-    width: 0em;
-    text-decoration: none !important;
-    font-weight: 700;
-    font-size: 12px;
-    padding: .8em 2.5em;
-}
-
-#line {
-    margin: 3em 0 3em 0;
-    padding: 40px 70px 200px 1px;
-    background-color: #1c3f94;
-    clip-path: polygon(100% 0, 0 0, 100% 5%);
-
-
-
+    #L-blue {
+        margin-top: 8em;
+    }
 }
