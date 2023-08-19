@@ -350,8 +350,37 @@ nav button {
 }
 
 
+/* ============
+   Live News
+   ============*/
 
+#heading-3 p,
+.News a {
+    font-weight: 900;
+    font-size: 16px;
+    color: #1c3e9469;
+    margin-bottom: 0%;
+    text-decoration: none !important;
+}
 
+#heading-3 span {
+    font-weight: 900;
+    font-size: 55px;
+    color: #1c3f94 !important;
+
+}
+
+#social-icon {
+    margin-bottom: 1.4em;
+}
+
+#social-icon img {
+    margin-right: .8em;
+}
+
+#social-icon a {
+    margin-bottom: 1.2em;
+}
 
 
 
@@ -465,34 +494,67 @@ nav button {
     }
 
     /* layout -3 */
-    #image-1 img {
-        width: 100%;
-    }
+
 
     #wht-container {
-        margin-top: .1em;
-        height: 66%;
+        padding-left: 3em;
+        margin-left: -1.5em;
+        height: 79%;
+    }
+
+    #wht-container span {
+        font-size: 15px;
+        font-weight: 700;
+        color: #1c3f94;
     }
 
     #sm-img img {
-        margin-left: 1em;
-        margin-right: 2em;
+        margin-top: 1em;
+        width: 22%;
+    }
+
+    #sm-img img:first-child {
+        margin-left: 2.6em;
+        margin-right: 1.4em;
+    }
+
+    #sm-img img:nth-child(2) {
         margin-top: .9em;
-        width: 20%;
+        margin-left: 0em;
+        margin-right: 0%;
+
     }
 
     #sm-img img:last-child {
         margin-top: .9em;
+        margin-left: 1.3em;
+        margin-right: 0%;
 
     }
 
+    #icon-sm {
+        width: 100% !important;
+    }
+
+
     #wht-container #content {
-        padding: 0 3.5em;
+        padding: 0 1em;
+    }
+
+    #wht-container #content p {
+        color: black;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    #wht-container #content a {
+        font-size: 9px;
+
     }
 
 }
 
-/* media for screen 0-max-380 */
+/* media for screen 0-max-767 */
 @media only screen and (max-width:767px) {
 
     /* navbar */
@@ -511,4 +573,133 @@ nav button {
     #L-blue {
         margin-top: 8em;
     }
+
+    /* layout -3 */
+
+    #image-1 img {
+        width: 100%;
+    }
+
+    #wht-container {
+        padding-top: 2em;
+        padding-left: 2em;
+        margin-top: 1em;
+        height: 69%;
+        margin-left: 0;
+    }
+
+    #icon-sm {
+        width: 80% !important;
+        padding: 0;
+        float: left;
+    }
+
+    #sm-img img {
+        margin-top: 1em;
+        width: 22%;
+    }
+
+    #wht-container span {
+        font-size: 26px;
+    }
+
+    #wht-container #content p {
+        font-size: 15px;
+    }
+
+    #wht-container #content a {
+        font-size: 14px;
+    }
+
+
+    #sm-img img {
+        width: 17%;
+    }
+
+    #sm-img img:first-child {
+        margin-left: 1.3em;
+        margin-right: 1.4em;
+    }
+
+
+}
+
+/* media for screen 0-max-575 */
+@media only screen and (max-width:575px) {
+    #icon-sm {
+        width: 100% !important;
+        padding-right: 0%;
+    }
+
+    #wht-container {
+        padding: 32px 32px;
+
+    }
+
+    /* #wht-container #content p{
+        padding: 2%;
+    } */
+
+
+    /* #icon {
+        padding: 0 0 0 0;
+    }
+
+    #icon-topic {
+        padding: 0 0 0 1em;
+    }
+
+    #wht-container #content {
+        padding: 0%;
+    } */
+
+
+}
+/* ============================================
+
+===============================================*/
+
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* large - display 6 */
+@media (min-width: 992px) {
+    
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(50%);
+    }
+    
+    .carousel-inner .carousel-item-left.active, 
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-50%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+.movie-img {
+	height:200px;width: 150px;background-color:  aqua;overflow: hidden;background-image: url("https://i.hizliresim.com/mX07R4.png");
+	background-repeat:no-repeat;
+	background-size: cover;
+	object-fit: fill;
+}
+
+.movie-title {
+	height: 40px; width:150px;background-color: black;overflow: hidden;
 }
