@@ -673,7 +673,7 @@ footer .container {
     font-weight: 400;
     color: white !important;
     text-decoration: none !important;
-    line-height: 2.6;
+    line-height: 2.3;
 }
 
 .foot-head-3 a {
@@ -681,7 +681,15 @@ footer .container {
     font-weight: 400;
     color: white !important;
     text-decoration: none !important;
-    line-height: 2.2;
+    line-height: 1.8;
+}
+
+.foot-head-3 {
+    margin-left: 1em;
+}
+
+.foot-head-2 {
+    margin-left: 3em;
 }
 
 .foot-head-2 p,
@@ -689,9 +697,9 @@ footer .container {
     margin: 0;
 }
 
-.foot-head-2 span a {
+.foot-head-3 span a {
     color: white;
-    opacity: 0.549;
+    opacity: 0.549 !important;
     font-size: 14px;
     font-weight: 400;
 }
@@ -800,6 +808,11 @@ MEDIA QUERIES
 
     #blog-bg {
         padding-bottom: 2em;
+    }
+
+    #foot-head-1,
+    #foot-content-logo {
+        padding-left: 1em !important;
     }
 }
 
@@ -927,7 +940,9 @@ MEDIA QUERIES
     #foot-content-logo {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: start;
+        margin-left: 1.1em;
+        margin-bottom: 2em;
     }
 
 
@@ -1025,6 +1040,29 @@ MEDIA QUERIES
         margin-top: 2.5em;
     }
 
+    /* footer */
+    .foot-head-3 {
+        margin-left: 0%;
+        margin-top: 2em;
+    }
+
+    .foot-head-2 {
+        margin-left: 0%;
+        margin-top: 2.6em;
+    }
+
+    #foot-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 2em;
+    }
+
+    /* #foot-content-logo {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items:start!important;
+    } */
 
 }
 
@@ -1109,4 +1147,31 @@ MEDIA QUERIES
         margin-bottom: 5em;
         padding: 180px 0 10px;
     } */
+
+
+
+    /* footer */
+    #foot-head-1 {
+        padding-left: 2em;
+    }
+
+    .foot-head-2 {
+        padding-left: 1.1em;
+    }
+
+    .foot-head-3 {
+        padding-left: 1.1em;
+    }
+
+    #foot-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-top: 2em;
+        margin-left: 1em;
+    }
+
+    #foot-content-logo img {
+        padding: .9em;
+    }
 }
