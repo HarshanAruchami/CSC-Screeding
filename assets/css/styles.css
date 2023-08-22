@@ -297,6 +297,15 @@ nav button {
 
 }
 
+#wht-container-2 {
+    background-color: white;
+    padding: 2em 2em 2em 1em;
+    height: 75%;
+    z-index: 0;
+    margin-top: -2em;
+
+}
+
 #sm-img img {
     margin-right: 1.5em;
     margin-top: 2em;
@@ -307,11 +316,40 @@ nav button {
     margin-top: 2em;
 }
 
+#sm-img img {
+    margin-right: 1.5em;
+    margin-top: 2em;
+}
+
+#sm-img img:last-child {
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+#sm-img-2 img {
+    margin-right: 1.5em;
+    margin-top: 2em;
+}
+
+#sm-img-2 img:last-child {
+    margin-right: 4.3em;
+    margin-top: 2em;
+}
+
 #image-1 {
     z-index: 1;
 }
 
+#image-2 {
+    z-index: 1;
+    margin-left: -4em;
+}
+
 #image-1 img {
+    width: 110%;
+}
+
+#image-2 img {
     width: 110%;
 }
 
@@ -319,7 +357,21 @@ nav button {
     padding: 0 2.5em;
 }
 
+#wht-container-2 #content {
+    padding: 0 1.8em !important;
+}
+
+#wht-container-2 #content {
+    padding: 0 2.5em;
+}
+
 #wht-container #content p {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#wht-container-2 #content p {
     color: black;
     font-size: 15px;
     font-weight: 500;
@@ -336,12 +388,27 @@ nav button {
     box-shadow: 5px 5px #1c3e9431;
 }
 
+#wht-container-2 #content a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #f7461d;
+    padding: .6em 1.5em;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 5px 5px #1c3e9431;
+}
+
 #wht-container p {
     font-size: 12px;
     font-weight: 900;
     color: #1c3e9469;
+}
 
-
+#wht-container-2 p {
+    font-size: 12px;
+    font-weight: 900;
+    color: #1c3e9469;
 }
 
 #wht-container span {
@@ -350,6 +417,11 @@ nav button {
     color: #1c3f94;
 }
 
+#wht-container-2 span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #1c3f94;
+}
 
 /* ============
    Live News
@@ -778,25 +850,33 @@ MEDIA QUERIES
     /* layout-3 */
 
 
-    #wht-container #content {
+    #wht-container #content,
+    #wht-container-2 #content {
         padding: 0 1.8em;
     }
+
+
 
     #icon-sm {
         width: 80%;
     }
 
-    #wht-container {
+    #wht-container,
+    #wht-container-2 {
         height: 80%;
     }
 
-    #sm-img img {
+
+    #sm-img img,
+    #sm-img-2 img {
         margin-right: 2.2em;
         margin-top: .9em;
         width: 20%;
     }
 
-    #sm-img img:last-child {
+
+    #sm-img img:last-child,
+    #sm-img-2 img:last-child {
         margin-top: .9em;
 
     }
@@ -861,7 +941,14 @@ MEDIA QUERIES
         height: 79%;
     }
 
-    #wht-container span {
+    #wht-container-2 {
+        padding-left: 1em;
+        margin-left: -1.5em;
+        height: 79%;
+    }
+
+    #wht-container span,
+    #wht-container-2 span {
         font-size: 15px;
         font-weight: 700;
         color: #1c3f94;
@@ -872,9 +959,20 @@ MEDIA QUERIES
         width: 22%;
     }
 
+    #sm-img-2 img {
+        margin-top: 1.5em;
+        width: 22%;
+    }
+
     #sm-img img:first-child {
         margin-left: 2.6em;
         margin-right: 1.4em;
+    }
+
+    #sm-img-2 img:first-child {
+        margin-left: -.5em;
+        margin-right: 1.4em;
+        margin-top: 1.7em;
     }
 
     #sm-img img:nth-child(2) {
@@ -884,6 +982,12 @@ MEDIA QUERIES
 
     }
 
+    #sm-img-2 img:nth-child(2) {
+        margin-top: 1.6em;
+        margin-left: 0em;
+        margin-right: 0%;
+    }
+
     #sm-img img:last-child {
         margin-top: .9em;
         margin-left: 1.3em;
@@ -891,22 +995,31 @@ MEDIA QUERIES
 
     }
 
+    #sm-img-2 img:last-child {
+        margin-top: 1.6em;
+        margin-left: 1.3em;
+        margin-right: 0%;
+    }
+
     #icon-sm {
         width: 100% !important;
     }
 
 
-    #wht-container #content {
-        padding: 0 1em;
+    #wht-container #content,
+    #wht-container-2 #content {
+        padding: 0 1em !important;
     }
 
-    #wht-container #content p {
+    #wht-container #content p,
+    #wht-container-2 #content p {
         color: black;
         font-size: 10px;
         font-weight: 500;
     }
 
-    #wht-container #content a {
+    #wht-container #content a,
+    #wht-container-2 #content a {
         font-size: 9px;
 
     }
@@ -1068,32 +1181,23 @@ MEDIA QUERIES
 
 /* media for screen 0-max-575 */
 @media only screen and (max-width:575px) {
+
+    /* work */
     #icon-sm {
-        width: 100% !important;
+        width: 15% !important;
         padding-right: 0%;
     }
 
     #wht-container {
-        padding: 32px 32px;
+        padding: 2em 1em 3em 1em;
+        height: 80%;
 
-    }
-
-    /* #wht-container #content p{
-        padding: 2%;
-    } */
-
-
-    /* #icon {
-        padding: 0 0 0 0;
     }
 
     #icon-topic {
-        padding: 0 0 0 1em;
+        margin-top: 1em;
     }
 
-    #wht-container #content {
-        padding: 0%;
-    } */
 
 
     /* BLOG */
