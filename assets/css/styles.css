@@ -606,27 +606,117 @@ textarea::placeholder {
     text-decoration: none !important;
 }
 
-.accred-content {
+#accred-content {
     font-size: 16px;
     font-weight: 500;
     color: black;
 }
 
+footer {
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+footer .container {
+    padding: 800px 0 220px;
+}
 
+#foot-logos {
+    margin-top: -40em;
+}
 
+#foot-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#foot-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: .4em;
+}
 
+/* line height */
+.foot-head {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.5;
+}
 
+.foot-head-2 p,
+.foot-head-3 p {
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    line-height: 2;
+}
 
+.foot-head p,
+.foot-head a {
+    margin: 0;
+}
 
+.foot-head a {
+    font-size: 14px;
+    font-weight: 400;
+    color: white !important;
+    text-decoration: none !important;
+}
 
+.foot-head-2 a {
+    font-size: 14px;
+    font-weight: 400;
+    color: white !important;
+    text-decoration: none !important;
+    line-height: 2.6;
+}
 
+.foot-head-3 a {
+    font-size: 14px;
+    font-weight: 400;
+    color: white !important;
+    text-decoration: none !important;
+    line-height: 2.2;
+}
 
+.foot-head-2 p,
+.foot-head-2 a {
+    margin: 0;
+}
 
+.foot-head-2 span a {
+    color: white;
+    opacity: 0.549;
+    font-size: 14px;
+    font-weight: 400;
+}
 
+.foot-light {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
 
+#foot-mar {
+    margin-bottom: 4em;
+}
 
+#foot-btn {
+    text-decoration: none !important;
+    color: #ffffff !important;
+    background-color: #f7461d;
+    box-shadow: 5px 5px #1c3e9431;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: .8em 2em;
+
+}
 
 
 /* ============================================
@@ -826,6 +916,20 @@ MEDIA QUERIES
         margin-top: 5em;
     }
 
+    /* footer */
+    #foot-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    #foot-content-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
 }
 
@@ -976,16 +1080,33 @@ MEDIA QUERIES
         margin-top: 2em;
     }
 
-
-    .accreditation {
-        padding: 2px 0 400px;
-    }
-
-    .accred-content {
+    #accred-content {
         padding: 0% !important;
     }
-/* =============================================start from here */
 
+    /* .accreditation {
+        padding: 0;
+    } */
+    /* 
+    #accred-container {}
 
+    #heading-6 {
+        margin-bottom: ;
+    } */
 
+    /* #accred {
+        background-image: url(../images/accreditations-bg.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    } */
+
+    /* .accreditation {
+
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5em;
+        padding: 180px 0 10px;
+    } */
 }
