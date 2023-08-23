@@ -256,7 +256,7 @@ nav button {
     position: relative;
     background-size: cover;
     background-position: center;
-    padding: 500px 0 720px;
+    padding: 500px 0 100px;
 }
 
 #heading-2 p {
@@ -304,6 +304,10 @@ nav button {
     z-index: 0;
     margin-top: -2em;
 
+}
+
+#work-2 {
+    margin-top: 6em;
 }
 
 #sm-img img {
@@ -454,6 +458,7 @@ nav button {
 #social-icon a {
     margin-bottom: 1.2em;
 }
+
 
 
 /* ============
@@ -798,6 +803,51 @@ footer .container {
 
 }
 
+/* ============================================
+SWIPER JS
+===============================================*/
+
+swiper-container {
+    width: 100%;
+    height: 300% !important;
+    padding: 0;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #00000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200% !important;
+    display: flex;
+    flex-direction: column;
+
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+swiper-slide p {
+    font-size: 10px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 1em;
+    color: #000000;
+}
+
+swiper-container {
+    margin: 20px auto;
+}
+
+video {
+    width: 100% !important;
+    background: #000000;
+}
 
 /* ============================================
 MEDIA QUERIES
@@ -943,7 +993,7 @@ MEDIA QUERIES
 
     #wht-container-2 {
         padding-left: 1em;
-        margin-left: -1.5em;
+        width: 105%;
         height: 79%;
     }
 
@@ -954,13 +1004,13 @@ MEDIA QUERIES
         color: #1c3f94;
     }
 
-    #sm-img img {
-        margin-top: 1em;
-        width: 22%;
+    #image-2 {
+        margin-left: -2.6em;
     }
 
+    #sm-img img,
     #sm-img-2 img {
-        margin-top: 1.5em;
+        margin-top: 1.1em !important;
         width: 22%;
     }
 
@@ -976,20 +1026,20 @@ MEDIA QUERIES
     }
 
     #sm-img img:nth-child(2) {
-        margin-top: .9em;
+        margin-top: 1.1em;
         margin-left: 0em;
         margin-right: 0%;
 
     }
 
     #sm-img-2 img:nth-child(2) {
-        margin-top: 1.6em;
+        margin-top: 1.7em;
         margin-left: 0em;
         margin-right: 0%;
     }
 
     #sm-img img:last-child {
-        margin-top: .9em;
+        margin-top: 1em;
         margin-left: 1.3em;
         margin-right: 0%;
 
@@ -998,7 +1048,7 @@ MEDIA QUERIES
     #sm-img-2 img:last-child {
         margin-top: 1.6em;
         margin-left: 1.3em;
-        margin-right: 0%;
+        margin-right: 2.7em;
     }
 
     #icon-sm {
@@ -1087,6 +1137,14 @@ MEDIA QUERIES
         width: 100%;
     }
 
+    #image-2 {
+        margin-left: 0% !important;
+    }
+
+    #image-2 img {
+        width: 100%;
+    }
+
     #wht-container {
         padding-top: 2em;
         padding-left: 2em;
@@ -1095,38 +1153,47 @@ MEDIA QUERIES
         margin-left: 0;
     }
 
+    #wht-container-2 {
+        padding-top: 2em;
+        padding-left: 2em;
+        margin-top: 1em;
+        height: 69%;
+        margin-left: 0;
+        width: 100%;
+    }
+
     #icon-sm {
         width: 80% !important;
         padding: 0;
         float: left;
     }
 
-    #sm-img img {
-        margin-top: 1em;
-        width: 22%;
-    }
-
-    #wht-container span {
+    #wht-container span,
+    #wht-container-2 span {
         font-size: 26px;
     }
 
-    #wht-container #content p {
+    #wht-container #content p,
+    #wht-container-2 #content p {
         font-size: 15px;
     }
 
-    #wht-container #content a {
+    #wht-container #content a,
+    #wht-container-2 #content a {
         font-size: 14px;
     }
 
-
-    #sm-img img {
-        width: 17%;
+    #sm-img img,
+    #sm-img-2 img {
+        width: 17% !important;
     }
 
-    #sm-img img:first-child {
+    #sm-img img:first-child,
+    #sm-img-2 img:first-child {
         margin-left: 1.3em;
         margin-right: 1.4em;
     }
+
 
     /* form-2 */
     .form-contact {
@@ -1189,7 +1256,13 @@ MEDIA QUERIES
     }
 
     #wht-container {
-        padding: 2em 1em 3em 1em;
+        padding: 2em 1em 3em 1em !important;
+        height: 80%;
+
+    }
+
+    #wht-container-2 {
+        padding: 2em 1em 3em 1em !important;
         height: 80%;
 
     }
