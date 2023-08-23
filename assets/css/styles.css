@@ -256,7 +256,8 @@ nav button {
     position: relative;
     background-size: cover;
     background-position: center;
-    padding: 500px 0 100px;
+    padding: 500px 0 200px;
+    z-index: 0 !important;
 }
 
 #heading-2 p {
@@ -426,6 +427,105 @@ nav button {
     font-weight: 700;
     color: #1c3f94;
 }
+
+/* ============
+   Quote
+   ============*/
+
+.quote {
+    background-image: url(../images/quote-bg.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 500px 0 125px;
+    z-index: 1 !important;
+    margin-top: -6em;
+}
+
+#quote-topic {
+    margin-top: -24.5em;
+}
+
+#quote-topic p {
+    font-size: 59px;
+    font-weight: 900;
+    color: white;
+}
+
+#quote-topic a {
+    text-decoration: none !important;
+    background-color: #1c3f94;
+    color: white;
+    /* background-color: #333; */
+    padding: .7em 2em;
+    font-size: 23px;
+    font-weight: 700;
+    float: right;
+    border-radius: 27px;
+}
+
+#heading-7 {
+    margin-top: 13em;
+}
+
+#heading-7 p {
+    font-weight: 900;
+    font-size: 16px;
+    color: #7d8aad;
+    margin-bottom: 4.5em;
+}
+
+
+#heading-7 span {
+    font-weight: 900;
+    font-size: 55px;
+    color: #ffffff !important;
+}
+
+#heading-7 a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #f7461d;
+    padding: .8em 1.5em;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 5px 5px #1c3e9431;
+}
+
+#quote-content p {
+    font-size: 14px !important;
+    font-weight: 400;
+    margin-bottom: 2em;
+    color: #000000;
+}
+
+#author {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #1c3f94 !important;
+}
+
+#quote-content {
+    position: relative;
+}
+
+#blob-content {
+    position: absolute;
+    margin-top: -23em;
+    margin-left: 6em;
+}
+
+#blob-content img {
+    margin-bottom: 1.5em;
+}
+
+
+
+
+
+
 
 /* ============
    Live News
@@ -665,10 +765,6 @@ textarea::placeholder {
     padding: 180px 0 10px;
 }
 
-#accred {
-    /* margin-top: 15em; */
-}
-
 #heading-6 span {
     font-weight: 900;
     font-size: 55px;
@@ -852,7 +948,6 @@ video {
 /* ============================================
 MEDIA QUERIES
 ===============================================*/
-
 /* Media for screen b/w 992px and 1199*/
 @media only screen and (min-width:992px) and (max-width:1199px) {
 
@@ -944,6 +1039,18 @@ MEDIA QUERIES
     #foot-content-logo {
         padding-left: 1em !important;
     }
+
+    /* Quote */
+    #heading-7 {
+        margin-top: 10em;
+    }
+
+    #blob-content {
+        margin-top: -21em;
+    }
+
+
+
 }
 
 /* Media for screen 0-max-992px*/
@@ -1074,6 +1181,50 @@ MEDIA QUERIES
 
     }
 
+    /* quote */
+    #quote-topic {
+        margin-top: -23em;
+    }
+
+    #quote-topic p {
+        font-size: 40px;
+        font-weight: 900;
+        color: white;
+    }
+
+    #quote-topic a {
+        text-decoration: none !important;
+        background-color: #1c3f94;
+        color: white;
+        /* background-color: #333; */
+        padding: .7em 2em;
+        font-size: 17.4px;
+        font-weight: 700;
+        float: right;
+        border-radius: 27px;
+    }
+
+
+    #quote-content p {
+        font-size: 11px !important;
+        font-weight: 500;
+    }
+
+    #blob-content {
+        margin-top: -15em;
+        margin-left: 4em;
+    }
+
+    #blob-content img {
+        width: 5%;
+        margin-bottom: 1em;
+    }
+
+
+
+
+
+
     /* form-2 */
     #form-btn {
         margin-top: .7em !important;
@@ -1194,7 +1345,17 @@ MEDIA QUERIES
         margin-right: 1.4em;
     }
 
+    /* Quotes */
+    #blob-head {
+        margin-bottom: 3em;
+    }
 
+    #blob-content {
+        margin-top: -17.5em;
+    }
+    #blob-content p{
+        font-size: 12px!important;
+    }
     /* form-2 */
     .form-contact {
         background-image: url(../images/form-bg-png.png);
@@ -1271,6 +1432,10 @@ MEDIA QUERIES
         margin-top: 1em;
     }
 
+    /* quote */
+    #quote-topic {
+        margin-top: -27em;
+    }
 
 
     /* BLOG */
