@@ -258,6 +258,7 @@ nav button {
     background-position: center;
     padding: 500px 0 200px;
     z-index: 0 !important;
+    margin-bottom: 18em;
 }
 
 #heading-2 p {
@@ -305,6 +306,10 @@ nav button {
     z-index: 0;
     margin-top: -2em;
 
+}
+
+#work-1 {
+    margin-top: 3em;
 }
 
 #work-2 {
@@ -431,16 +436,33 @@ nav button {
 /* ============
    Quote
    ============*/
-
-.quote {
-    background-image: url(../images/quote-bg.png);
+#quote-topic {
+    background-image: url(../images/orange-bg.png);
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 500px 0 125px;
-    z-index: 1 !important;
-    margin-top: -6em;
+    padding: 500px 0 0px;
+}
+
+.quote {
+    margin-top: 15em;
+    margin-bottom: 7em;
+}
+
+#quote-row {
+    margin-top: -23em;
+}
+
+#blue-bg {
+    background-image: url(../images/blue-bg.png);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 500px 0 200px;
+    margin-top: -15em;
+
 }
 
 #quote-topic {
@@ -466,7 +488,7 @@ nav button {
 }
 
 #heading-7 {
-    margin-top: 13em;
+    margin-top: -18em;
 }
 
 #heading-7 p {
@@ -530,6 +552,9 @@ nav button {
 /* ============
    Live News
    ============*/
+.News {
+    margin-bottom: 3em;
+}
 
 #heading-3 p,
 .News a {
@@ -595,7 +620,7 @@ nav button {
 }
 
 #heading-4 {
-    margin-top: 5em;
+    margin-top: 5em !important;
 }
 
 
@@ -761,6 +786,7 @@ textarea::placeholder {
     position: relative;
     background-size: cover;
     background-position: center;
+    margin-top: -5em;
     margin-bottom: 5em;
     padding: 180px 0 10px;
 }
@@ -785,6 +811,9 @@ textarea::placeholder {
     color: black;
 }
 
+/* ============
+   Footer
+   ============*/
 footer {
     background-image: url(../images/footer.png);
     background-repeat: no-repeat;
@@ -948,6 +977,35 @@ video {
 /* ============================================
 MEDIA QUERIES
 ===============================================*/
+
+/* Media for screen 0-max-2560px*/
+@media only screen and (min-width:1441px) and (max-width:2605px) {
+
+    /* quote */
+    #quote-topic {
+        padding: 500px 0 500px;
+    }
+
+    #blue-bg {
+        padding: 600px 0 300px;
+        margin-top: -45em;
+    }
+
+    #blob-head {
+        margin-top: 3em;
+    }
+
+    /* form */
+    #form-row {
+        margin-top: -1.8em;
+    }
+
+    #heading-4 {
+        margin-top: -2em;
+    }
+
+}
+
 /* Media for screen b/w 992px and 1199*/
 @media only screen and (min-width:992px) and (max-width:1199px) {
 
@@ -1353,9 +1411,11 @@ MEDIA QUERIES
     #blob-content {
         margin-top: -17.5em;
     }
-    #blob-content p{
-        font-size: 12px!important;
+
+    #blob-content p {
+        font-size: 12px !important;
     }
+
     /* form-2 */
     .form-contact {
         background-image: url(../images/form-bg-png.png);
@@ -1437,6 +1497,24 @@ MEDIA QUERIES
         margin-top: -27em;
     }
 
+    #quote-content p {
+        font-size: 11px !important;
+        font-weight: 400;
+        margin-bottom: 1em;
+        color: #000000;
+        padding: 0 2.5em;
+    }
+
+    #blob-content {
+        position: absolute;
+        margin-top: -16em;
+        margin-left: 2em;
+    }
+
+    #blob-content img {
+        margin-bottom: .7em !important;
+        margin-left: 1.9em;
+    }
 
     /* BLOG */
     #para {
@@ -1515,5 +1593,63 @@ MEDIA QUERIES
 
     #foot-content-logo img {
         padding: .9em;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    #quote-content p {
+        font-size: 10px !important;
+        font-weight: 400;
+        margin-bottom: 1em !important;
+        color: #000000;
+        padding: 0 1.4em;
+    }
+
+    #blob-content {
+        position: absolute;
+        margin-top: -13.6em;
+        margin-left: 1.8em;
+    }
+
+    #blob-content img {
+        margin-bottom: 1.5em;
+        margin-left: .9em !important;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    #quote-content p {
+        font-size: 9px !important;
+        font-weight: 400;
+        margin-bottom: 1em !important;
+        color: #000000;
+        padding: 0 1.4em;
+    }
+
+    #blob-content {
+        position: absolute;
+        margin-top: -12em;
+        margin-left: 1.8em;
+    }
+
+    #blob-content img {
+        margin-bottom: 1.5em;
+        margin-left: .8em !important;
+    }
+}
+
+@media only screen and (max-width:330px) {
+    #quote-content p {
+        font-size: 8px !important;
+        font-weight: 400;
+        margin-bottom: 2em;
+        color: #000000;
+        padding: 0 1.4em;
+    }
+
+    #blob-content {
+        position: absolute;
+        margin-top: -11em;
+        margin-left: 2em;
     }
 }

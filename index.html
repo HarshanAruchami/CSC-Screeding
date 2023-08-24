@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!-- <section class="Navbar">
+    <section class="Navbar">
         <nav>
             <div class="container" id="nav">
                 <nav class="navbar navbar-expand-lg px-lg-0 px-1" id="nav-cont">
@@ -127,10 +127,10 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <section class="Our_work">
-        <div class="container">
+        <div class="container" id="work-1">
             <div class="row align-items-center" id="heading-2">
                 <div class="col-12 col-md-8">
                     <p>WHAT WE HAVE DONE<br><span>Our Work</span></p>
@@ -202,39 +202,44 @@
     </section>
 
     <section class="quote">
-        <div class="container" id="quote-topic">
-            <div class="row align-items-center">
-                <div class="col-md-8">
-                    <p>Get A Quote Today</p>
+        <div id="quote-topic">
+            <div class="container">
+                <div class="row align-items-center" id="quote-row">
+                    <div class="col-md-8">
+                        <p>Get A Quote Today</p>
+                    </div>
+                    <div class="col-md-4"><a href="#">GET MY QUOTE</a></div>
                 </div>
-                <div class="col-md-4"><a href="#">GET MY QUOTE</a></div>
             </div>
         </div>
-        <div class="container">
-            <div class="row" id="heading-7">
-                <div class="col-md-5" id="blob-head">
-                    <p>TESTIMONIALS<br><span>Our Clients’
-                            Thoughts</span></p>
-                    <a href="#">REQUEST A QUOTE</a>
-                </div>
-                <div class="col-md-7">
-                    <img src="./assets/images/Blob.png" width="100%" id="blob" alt="Blob">
-                    <div class="row" id="quote-content">
-                        <div class="col-10 col-sm-9 col-lg-8" id="blob-content">
-                            <div>
-                                <img src="./assets/images/dbl-quote.png" alt="quote-img">
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti maxime
-                                    veritatis
-                                    necessitatibus ratione placeat eum debitis ullam. Aliquam, sapiente necessitatibus
-                                    id
-                                    illo.
-                                    Doloribus tempore omnis, facere, earum nesciunt aut praesentium tenetur. Debitis
-                                    nemo,
-                                    dolorem eligendi quos excepturi iure aliquam.
-                                </p>
-                                <p id="author">Author Name <br>
-                                    <b>Company Name</b>
-                                </p>
+        <div id="blue-bg">
+            <div class="container">
+                <div class="row" id="heading-7">
+                    <div class="col-md-5" id="blob-head">
+                        <p>TESTIMONIALS<br><span>Our Clients’
+                                Thoughts</span></p>
+                        <a href="#">REQUEST A QUOTE</a>
+                    </div>
+                    <div class="col-md-7">
+                        <img src="./assets/images/Blob.png" width="100%" id="blob" alt="Blob">
+                        <div class="row" id="quote-content">
+                            <div class="col-10 col-sm-9 col-lg-8" id="blob-content">
+                                <div>
+                                    <img src="./assets/images/dbl-quote.png" alt="quote-img">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti maxime
+                                        veritatis
+                                        necessitatibus ratione placeat eum debitis ullam. Aliquam, sapiente
+                                        necessitatibus
+                                        id
+                                        illo.
+                                        Doloribus tempore omnis, facere, earum nesciunt aut praesentium tenetur. Debitis
+                                        nemo,
+                                        dolorem eligendi quos excepturi iure aliquam.
+                                    </p>
+                                    <p id="author">Author Name <br>
+                                        <b>Company Name</b>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -244,17 +249,8 @@
     </section>
 
 
-
-
-
-
-
-
-
-
-
     <section class="News">
-        <div class="container">
+        <div class="container mb-5">
             <div class="row align-items-end">
                 <div class="col-md-7" id="heading-3">
                     <p>LIVE NEWS<br><span>The Screeder's Journal</span></p>
@@ -331,7 +327,7 @@
                         culpa alias esse, dolorem ipsum dolor sit, magni. Quis?</p>
                 </div>
                 <div class="col-md-6">
-                    <div class="row ">
+                    <div class="row" id="form-row">
                         <div class="col-lg-12">
                             <div class="card mt-2 mx-auto p-4 bg-light" id="card-2">
                                 <div class=" bg-light">
@@ -521,72 +517,75 @@
     <section class="footer">
         <footer>
             <div class="container">
-                <div class="row" id="foot-logos">
-                    <div class="col-lg-4 p-0" id="foot-content-logo">
-                        <img src="./assets/images/footer-logo.png" alt="footer-logo">
+                <div id="foot-body">
+                    <div class="row" id="foot-logos">
+                        <div class="col-lg-4 p-0" id="foot-content-logo">
+                            <img src="./assets/images/footer-logo.png" alt="footer-logo">
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-2" id="foot-content">
+                            <img src="./assets/images/foot-icon-1.png" alt="foot-icon-1">
+                            <p>ContractScreed<sup>&#174;</sup></p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-2" id="foot-content">
+                            <img src="./assets/images/foot-icon-2.png" alt="foot-icon-2">
+                            <p>BuildScreed<sup>&#174;</sup></p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-2" id="foot-content">
+                            <img src="./assets/images/foot-icon-3.png" alt="foot-icon-3">
+                            <p>ScreedTest<sup>&#174;</sup></p>
+                        </div>
+                        <div class="col-sm-6 col-md-3 col-lg-2" id="foot-content">
+                            <img src="./assets/images/foot-icon-4.png" alt="foot-icon-4">
+                            <p>HomeScreed<sup>&#174;</sup></p>
+                        </div>
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-2" id="foot-content">
-                        <img src="./assets/images/foot-icon-1.png" alt="foot-icon-1">
-                        <p>ContractScreed<sup>&#174;</sup></p>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-2" id="foot-content">
-                        <img src="./assets/images/foot-icon-2.png" alt="foot-icon-2">
-                        <p>BuildScreed<sup>&#174;</sup></p>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-2" id="foot-content">
-                        <img src="./assets/images/foot-icon-3.png" alt="foot-icon-3">
-                        <p>ScreedTest<sup>&#174;</sup></p>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-2" id="foot-content">
-                        <img src="./assets/images/foot-icon-4.png" alt="foot-icon-4">
-                        <p>HomeScreed<sup>&#174;</sup></p>
+                    <div class="row mt-5">
+                        <div class="col-md-4 col-lg-3 p-lg-0" id="foot-head-1">
+                            <div class="foot-head">
+                                <p>PHONE</p>
+                                <a href="">0330 223 2364</a>
+                            </div>
+                            <div class="foot-head mt-4">
+                                <p>EMAIL</p>
+                                <a href="">estimating@cscscreeding.co.uk</a>
+                            </div>
+                            <div class="foot-head mt-4" id="foot-mar">
+                                <p>ADDRESS</p>
+                                <a>Unit 2, Cherry Orchard Nursery,<br>Trenches Lane,<br> Slough, SL3 6DH</a>
+                            </div>
+                            <a href="#" id="foot-btn">REQUEST A QUOTE</a>
+                        </div>
+                        <div class="col-md-4 col-lg-5">
+                            <div class="foot-head-2">
+                                <p>SCREED SYSTEMS</p>
+                                <a href="">Traditional Screed</a><br>
+                                <a href="">Fast Drying Floor Screed</a><br>
+                                <a href=""> Free Flowing Screeds</a><br>
+                                <a href=""> Underfloor Heating Floor Screed</a><br>
+                                <a href="">Structural Screeds</a><br>
+                                <a href=""> DPM / Radon Barriers / Floor Primers / Accessories</a><br>
+                                <a href="">Insulation Systems</a><br>
+                                <a href="">Substrate Floor Key / Bonding Preparation Service</a><br>
+                                <a href=""> Floor levelling compounds</a><br>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                            <div class="foot-head-3">
+                                <p>USEFUL LINKS</p>
+                                <a href="">About CSC</a><br>
+                                <a href="">Terms & Conditions</a><br>
+                                <a href="">Privacy Policy</a><br>
+                                <a href="">Cookie Policy</a><br><br>
+                                <span>
+                                    <a>VAT Number: XXXXXXX</a><br>
+                                    <a>Company Number: XXXXXXX</a><br><br>
+                                    <a>Copyright 2023 CSC Screeding. All rights Reserved. Designed and Developed by JDR
+                                        Group</a></span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row mt-5">
-                    <div class="col-md-4 col-lg-3 p-lg-0" id="foot-head-1">
-                        <div class="foot-head">
-                            <p>PHONE</p>
-                            <a href="">0330 223 2364</a>
-                        </div>
-                        <div class="foot-head mt-4">
-                            <p>EMAIL</p>
-                            <a href="">estimating@cscscreeding.co.uk</a>
-                        </div>
-                        <div class="foot-head mt-4" id="foot-mar">
-                            <p>ADDRESS</p>
-                            <a>Unit 2, Cherry Orchard Nursery,<br>Trenches Lane,<br> Slough, SL3 6DH</a>
-                        </div>
-                        <a href="#" id="foot-btn">REQUEST A QUOTE</a>
-                    </div>
-                    <div class="col-md-4 col-lg-5">
-                        <div class="foot-head-2">
-                            <p>SCREED SYSTEMS</p>
-                            <a href="">Traditional Screed</a><br>
-                            <a href="">Fast Drying Floor Screed</a><br>
-                            <a href=""> Free Flowing Screeds</a><br>
-                            <a href=""> Underfloor Heating Floor Screed</a><br>
-                            <a href="">Structural Screeds</a><br>
-                            <a href=""> DPM / Radon Barriers / Floor Primers / Accessories</a><br>
-                            <a href="">Insulation Systems</a><br>
-                            <a href="">Substrate Floor Key / Bonding Preparation Service</a><br>
-                            <a href=""> Floor levelling compounds</a><br>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-lg-4">
-                        <div class="foot-head-3">
-                            <p>USEFUL LINKS</p>
-                            <a href="">About CSC</a><br>
-                            <a href="">Terms & Conditions</a><br>
-                            <a href="">Privacy Policy</a><br>
-                            <a href="">Cookie Policy</a><br><br>
-                            <span>
-                                <a>VAT Number: XXXXXXX</a><br>
-                                <a>Company Number: XXXXXXX</a><br><br>
-                                <a>Copyright 2023 CSC Screeding. All rights Reserved. Designed and Developed by JDR
-                                    Group</a></span>
-                        </div>
-                    </div>
-                </div>
+            </div>
         </footer>
     </section>
 
