@@ -479,7 +479,6 @@ nav button {
     text-decoration: none !important;
     background-color: #1c3f94;
     color: white;
-    /* background-color: #333; */
     padding: .7em 2em;
     font-size: 23px;
     font-weight: 700;
@@ -544,11 +543,6 @@ nav button {
 }
 
 
-
-
-
-
-
 /* ============
    Live News
    ============*/
@@ -595,8 +589,11 @@ nav button {
     position: relative;
     background-size: cover;
     background-position: center;
-    padding: 10px 0 10px;
     margin-bottom: 5em;
+}
+
+.form-contact #form-container {
+    padding: 10px 0 10px;
 }
 
 .form-contact span {
@@ -1417,14 +1414,11 @@ MEDIA QUERIES
     }
 
     /* form-2 */
-    .form-contact {
-        background-image: url(../images/form-bg-png.png);
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        padding: 150px 0 200px;
 
-    }
+
+    /* #heading-4 p{
+        margin-top: 15em!important;
+    } */
 
     #para {
         margin-top: 3em;
@@ -1470,7 +1464,76 @@ MEDIA QUERIES
 /* media for screen 0-max-575 */
 @media only screen and (max-width:575px) {
 
+    /* TYPOGRAPHY-FONT */
+    /* hero */
+    .hero-content p {
+        font-size: 26px;
+
+    }
+
+    #hero-align {
+        padding-right: 2em;
+    }
+
+    .hero-content span {
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .hero-content a,
+    #heading-7 a {
+        font-size: 13px;
+    }
+
+    /* headings of all layout */
+    .Our_Divisions span,
+    #heading-2 span,
+    #heading-3 span,
+    .form-contact span,
+    #heading-5 span {
+        font-weight: 900;
+        font-size: 30px;
+        color: #1c3e9469;
+    }
+
+    #heading-6 span {
+        font-weight: 900;
+        font-size: 30px;
+    }
+
+    #quote-topic p {
+        font-size: 30px;
+        font-weight: 900;
+        color: white;
+    }
+
+    #quote-topic a {
+        font-size: 13px;
+        float: left;
+    }
+
+    #heading-7 span {
+        font-size: 30px !important;
+
+    }
+
+    #heading-7 p {
+        margin-bottom: 2em;
+    }
+
+    #social-icon {
+        text-align: left;
+    }
+
+
+
+
+
     /* work */
+    #heading-2 a {
+        float: left!important;
+    }
+
     #icon-sm {
         width: 15% !important;
         padding-right: 0%;
@@ -1516,7 +1579,26 @@ MEDIA QUERIES
         margin-left: 1.9em;
     }
 
+    /* form */
+    #form-row-1 {
+        margin-top: 7em;
+    }
+
+    #form-container {
+        margin-top: -10em;
+    }
+
+    .form-contact #form-container {
+        padding: 10px 0 150px;
+    }
+
     /* BLOG */
+    .Blog {
+        margin-top: -6em;
+        z-index: 10 !important;
+        position: relative;
+    }
+
     #para {
         padding: 0%;
     }
@@ -1534,6 +1616,18 @@ MEDIA QUERIES
     }
 
     /* accreditation */
+    .accreditation {
+        padding: 155px 0 10px !important;
+        margin-top: -13em;
+        margin-bottom: 2em;
+        z-index: 1 !important;
+    }
+
+    #accred-container {
+        margin-top: 10em;
+    }
+
+
     #accred-logos img {
         margin-top: 2em;
     }
@@ -1542,31 +1636,7 @@ MEDIA QUERIES
         padding: 0% !important;
     }
 
-    /* .accreditation {
-        padding: 0;
-    } */
-    /* 
-    #accred-container {}
 
-    #heading-6 {
-        margin-bottom: ;
-    } */
-
-    /* #accred {
-        background-image: url(../images/accreditations-bg.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    } */
-
-    /* .accreditation {
-
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        margin-bottom: 5em;
-        padding: 180px 0 10px;
-    } */
 
 
 
