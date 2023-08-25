@@ -528,6 +528,12 @@ nav button {
     color: #1c3f94 !important;
 }
 
+#author-2 {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #ffffff !important;
+}
+
 #quote-content {
     position: relative;
 }
@@ -542,6 +548,59 @@ nav button {
     margin-bottom: 1.5em;
 }
 
+/* blob left */
+#blob-left {
+    position: absolute;
+    margin-left: -50em;
+    margin-top: 3em;
+}
+
+#blob-right {
+    position: absolute;
+    margin-left: 75em;
+
+}
+
+#blob-content-left p {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+#blob-content-right p {
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 2em;
+}
+
+#blob-content-left img {
+    margin-bottom: 1.5em;
+    z-index: 2 !important;
+}
+
+#blob-content-right img {
+    margin-bottom: 1.5em;
+    z-index: 2 !important;
+}
+
+#blob-content-left {
+    z-index: 10 !important;
+    margin-left: -108em;
+    margin-top: 15em;
+}
+
+#blob-content-right {
+    z-index: 10 !important;
+    margin-left: 83em;
+    margin-top: -22em;
+
+}
+
+.quote {
+    z-index: 0 !important;
+    position: relative !important;
+}
 
 /* ============
    Live News
@@ -927,6 +986,10 @@ footer .container {
 
 }
 
+
+
+
+
 /* ============================================
 SWIPER JS
 ===============================================*/
@@ -1044,15 +1107,47 @@ MEDIA QUERIES
 ===============================================*/
 
 /* Media for screen 0-max-2560px*/
-@media only screen and (min-width:1441px) and (max-width:2605px) {
+@media only screen and (min-width:1441px) and (max-width:2687px) {
+
+    /* navbar */
+    .Navbar {
+        padding: 200px 0 620px;
+    }
+
+    nav {
+        position: absolute;
+        width: 100%;
+        margin-top: -6em;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #hero-row {
+        margin-top: 3em;
+    }
+
+    /* our-divisions */
+    .Our_Divisions {
+        margin-top: 12em;
+        margin-bottom: 5em;
+    }
+
+    /* our work */
+    .Our_work {
+        padding: 500px 0 320px;
+
+    }
 
     /* quote */
     #quote-topic {
         padding: 500px 0 500px;
     }
 
+    #quote-row {
+        margin-top: -20em;
+    }
+
     #blue-bg {
-        padding: 600px 0 300px;
+        padding: 600px 0 400px;
         margin-top: -45em;
     }
 
@@ -1061,6 +1156,19 @@ MEDIA QUERIES
     }
 
     /* form */
+    .form-contact {
+        background-image: url(../images/form-bg-png.png);
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 5em;
+        padding: 200px 0 220px;
+    }
+
+    #form-row-1 {
+        margin-top: 3em;
+    }
+
     #form-row {
         margin-top: -1.8em;
     }
@@ -1069,6 +1177,17 @@ MEDIA QUERIES
         margin-top: -2em;
     }
 
+    /* footer */
+    footer {
+        background-image: url(../images/footer-4k.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #foot-body {
+        margin-top: 5em;
+    }
 }
 
 
@@ -1185,6 +1304,13 @@ MEDIA QUERIES
 
     }
 
+    #blob-left,
+    #blob-content-left,
+    #blob-content-right,
+    #blob-right {
+        display: none;
+    }
+
 }
 
 /* Media for screen 0-max-992px*/
@@ -1220,7 +1346,7 @@ MEDIA QUERIES
     }
 
     nav {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
     }
 
     .navbar-nav li:last-child {
@@ -1361,6 +1487,10 @@ MEDIA QUERIES
         font-weight: 500;
     }
 
+    #heading-7 span {
+        font-size: 35px;
+    }
+
     #blob-content {
         margin-top: -15em;
         margin-left: 4em;
@@ -1369,6 +1499,13 @@ MEDIA QUERIES
     #blob-content img {
         width: 5%;
         margin-bottom: 1em;
+    }
+
+    #blob-left,
+    #blob-content-left,
+    #blob-content-right,
+    #blob-right {
+        display: none;
     }
 
     /* form-2 */
@@ -1529,13 +1666,14 @@ MEDIA QUERIES
         font-size: 12px !important;
     }
 
+    #blob-left,
+    #blob-content-left,
+    #blob-content-right,
+    #blob-right {
+        display: none;
+    }
+
     /* form-2 */
-
-
-    /* #heading-4 p{
-        margin-top: 15em!important;
-    } */
-
     #para {
         margin-top: 3em;
     }
@@ -1620,7 +1758,7 @@ MEDIA QUERIES
 
     #quote-topic a {
         font-size: 13px;
-        float: left;
+        float: right;
     }
 
     #heading-7 span {
@@ -1633,7 +1771,8 @@ MEDIA QUERIES
     }
 
     #social-icon {
-        text-align: left;
+        text-align: right;
+        margin-top: 2em;
     }
 
     /* swiper txt */
@@ -1644,8 +1783,11 @@ MEDIA QUERIES
 
 
     /* work */
-    #heading-2 a {
-        float: left !important;
+    #heading-2 a,
+    #heading-5 a {
+        float: right !important;
+        padding: .8em 1.5em;
+        font-size: 10px;
     }
 
     #icon-sm {
@@ -1774,9 +1916,11 @@ MEDIA QUERIES
         margin-top: 2em;
         margin-left: 1em;
     }
-    #foot-content:last-child{
+
+    #foot-content:last-child {
         padding: 0 1em;
     }
+
     #foot-content-logo img {
         padding: .9em;
     }
